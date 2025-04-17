@@ -1,6 +1,10 @@
 {
   "version": 2,
   "builds": [
+  "buildCommand": "chmod +x ./build.sh && ./build.sh",
+  "outputDirectory": "dist",
+  "installCommand": "bash -c '[[ -f package.json ]] && npm install || (cp deployment-package.json package.json && npm install)'",
+  "rewrites": [
     {
       "src": "package.json",
       "use": "@vercel/node"
@@ -10,12 +14,17 @@
     {
       "src": "/api/(.*)",
       "dest": "/server/index.ts"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     },
     {
       "src": "/(.*)",
       "dest": "/client/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "framework": "vite",
   "regions": ["all"]
+  ]
 }

@@ -56,20 +56,20 @@ function ChannelCard({ title, description, icon, subscriberCount, category, link
 export default function ChannelsSection() {
   const channels = [
     {
-      title: "TG Movies Premium",
+      title: "Movies Channel",
       description: "Access to the latest movies, exclusive releases, and high-quality downloads.",
       icon: <Film className="h-6 w-6" />,
-      subscriberCount: "95K+",
+      subscriberCount: "15k+",
       category: "Movies",
-      link: "https://t.me/tgmoviespremium"
+      link: "https://t.me/movieflixspot"
     },
     {
-      title: "Series Hub Premium",
+      title: "Series Flix",
       description: "Premium TV shows and series from around the world with subtitles and no ads.",
       icon: <Video className="h-6 w-6" />,
-      subscriberCount: "78K+",
+      subscriberCount: "40K+",
       category: "TV Shows",
-      link: "https://t.me/serieshubpremium"
+      link: "https://t.me/seriesflix_verse"
     },
     {
       title: "Anime Vault",
@@ -80,28 +80,28 @@ export default function ChannelsSection() {
       link: "https://t.me/animevaultpremium"
     },
     {
-      title: "Music Unlimited",
+      title: "Music Channel",
       description: "Premium music tracks, albums, and playlists across all genres and moods.",
       icon: <Music className="h-6 w-6" />,
-      subscriberCount: "65K+",
+      subscriberCount: "1K+",
       category: "Music",
-      link: "https://t.me/musicunlimitedpremium"
+      link: "https://t.me/otakuflix_network"
     },
     {
-      title: "Global News Network",
-      description: "Breaking news and in-depth coverage from trusted sources worldwide.",
+      title: "Adult Flix",
+      description: "Exclusive Adult content, Daily Uploads, and special collections for Corn lovers.",
       icon: <Globe className="h-6 w-6" />,
-      subscriberCount: "110K+",
+      subscriberCount: "10K+",
       category: "News",
-      link: "https://t.me/globalnewspremium"
+      link: "https://t.me/hanime_arena"
     },
     {
-      title: "Creator's Community",
+      title: "Otaku Community",
       description: "Exclusive group for creative professionals with resources and networking.",
       icon: <MessageCircle className="h-6 w-6" />,
-      subscriberCount: "45K+",
+      subscriberCount: "100K+",
       category: "Community",
-      link: "https://t.me/creatorscommunity"
+      link: "https://t.me/otakuflix_network"
     },
   ];
 

@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://vercel.com/new/git/external?repository-url=https://github.com/yourusername/tg-premium&project-name=premium-flix&repository-name=premium-flix">
+  <a href="https://vercel.com/new/git/external?repository-url=https://github.com/Codeflix-Bots/Premium-Plans&project-name=premium-flix&repository-name=premium-flix">
     <img src="https://vercel.com/button" alt="Deploy with Vercel" />
   </a>
 </p>
@@ -56,6 +56,7 @@ git clone https://github.com/yourusername/tg-premium.git
 cd tg-premium
 npm install
 npm run dev
+```
 
 ---
 ## License

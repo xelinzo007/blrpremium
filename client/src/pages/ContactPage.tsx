@@ -294,25 +294,24 @@ export default function ContactPage() {
                 </TabsContent>
                 
 <TabsContent value="contact">
-  <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 text-center">
-    <div className="bg-[#0088cc]/10 text-[#0088cc] dark:text-[#5ab5f3] p-3 rounded-full inline-block mb-6">
-      <FaTelegram className="text-3xl" />
+  <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 text-center">
+    <div className="bg-[#0088cc]/10 text-[#0088cc] dark:text-[#5ab5f3] p-3 rounded-full inline-block mb-4">
+      <FaTelegram className="text-2xl" />
     </div>
-    <h2 className="text-2xl font-bold mb-4">Need Help?</h2>
-    <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-md mx-auto">
+    <h2 className="text-xl font-bold mb-3">Need Help?</h2>
+    <p className="text-gray-600 dark:text-gray-300 mb-4 max-w-md mx-auto text-sm">
       Our support team is available 24/7 to assist with payments or any questions about your subscription.
     </p>
     
     <Button 
-      size="lg"
-      className="bg-[#0088cc] hover:bg-[#0077b5] text-white px-8 py-6 text-lg w-full max-w-md mx-auto"
+      className="bg-[#0088cc] hover:bg-[#0077b5] text-white px-6 py-3 w-full max-w-xs mx-auto"
       onClick={() => window.open("https://t.me/ProYato", '_blank')}
     >
-      <FaTelegram className="mr-2 h-5 w-5" />
+      <FaTelegram className="mr-2" />
       Message Us on Telegram
     </Button>
     
-    <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+    <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
       Typically replies within 5 minutes
     </p>
   </div>

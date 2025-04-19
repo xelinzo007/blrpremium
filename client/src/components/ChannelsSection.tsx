@@ -72,12 +72,12 @@ export default function ChannelsSection() {
       link: "https://t.me/seriesflix_verse"
     },
     {
-      title: "Anime Vault",
-      description: "Exclusive anime content, early releases, and special collections for anime fans.",
+      title: "Doujinshi Flix",
+      description: "Exclusive Adult Manga content, early releases, and special collections for H-Manga fans.",
       icon: <BookOpen className="h-6 w-6" />,
-      subscriberCount: "120K+",
-      category: "Anime",
-      link: "https://t.me/animevaultpremium"
+      subscriberCount: "5K+",
+      category: "Doujinshi",
+      link: "https://t.me/hanime_arena"
     },
     {
       title: "Music Channel",
@@ -92,7 +92,7 @@ export default function ChannelsSection() {
       description: "Exclusive Adult content, Daily Uploads, and special collections for Corn lovers.",
       icon: <Globe className="h-6 w-6" />,
       subscriberCount: "10K+",
-      category: "News",
+      category: "Adult",
       link: "https://t.me/hanime_arena"
     },
     {

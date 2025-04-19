@@ -40,7 +40,7 @@ export default function ContactPage() {
     if (currency !== "₹" || !price) return "";
     
     const amount = price;
-    const paymentDesc = `TG Premium - ${plan} (${duration})`;
+    const paymentDesc = `Channel Premium - ${plan} (${duration})`;
     
     return `upi://pay?pa=${UPI_ID}&pn=TG%20Premium&am=${amount}&cu=INR&tn=${encodeURIComponent(paymentDesc)}`;
   };

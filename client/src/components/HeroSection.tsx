@@ -51,7 +51,7 @@ export default function HeroSection() {
         </div>
         
         <div className="mt-10 text-[#9ca3af] dark:text-[#9ca3af] text-gray-500 text-sm">
-          To get Premium Membership Contact:- @ProYato
+          Want to create a custom website? Contact @ProYato (Paid)
         </div>
       </div>
     </section>

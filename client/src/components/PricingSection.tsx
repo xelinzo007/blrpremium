@@ -126,9 +126,9 @@ export default function PricingSection() {
       period: "month",
       description: "Single month access to premium channels",
       features: [
-        "Access to all premium Telegram channels",
-        "Latest content updates",
-        "HD quality media",
+        "Access to all Adult/Movie Telegram channels",
+        "Daily New Content uploads",
+        "HD quality",
         "Direct download links",
         "Basic support",
       ],
@@ -157,7 +157,7 @@ export default function PricingSection() {
     },
     {
       title: "3 Months",
-      price: "₹250",
+      price: "₹260",
       priceUSD: "$3.00",
       period: "3 months",
       discount: "Save ₹140 compared to monthly",
@@ -217,7 +217,7 @@ export default function PricingSection() {
         <div>
           <h3 className="text-lg font-medium mb-2">Satisfaction Guaranteed</h3>
           <p className="text-gray-400 text-sm">
-            30-day money-back guarantee for all premium plans.
+            1-day money-back guarantee for 1 month premium plans.
           </p>
         </div>
         <div>

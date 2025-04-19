@@ -23,7 +23,7 @@
 ## ✨ Features
 
 - 📦 Multiple premium plans with customizable pricing
-- 💸 UPI Payment (QR-based) for ₹ INR
+- 💸 UPI Payment (QR-based) for ₹ INR & $ USD
 - 💲 PayPal & global payment options for USD
 - 📱 Responsive and mobile-friendly design
 - 🌙 Light/Dark mode toggle

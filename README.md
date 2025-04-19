@@ -1,7 +1,7 @@
 
 # Premium plans website
 
-# TG Premium - Telegram Premium Channel Subscription
+# Premium Flix - Telegram Channel Premium Plans 
 
 A responsive and dynamic web application for Telegram channel premium subscriptions with enhanced user interface and interactive design elements.
 

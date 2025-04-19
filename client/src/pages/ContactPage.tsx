@@ -16,7 +16,7 @@ export default function ContactPage() {
   const [currency, setCurrency] = useState<string>("₹");
   const qrRef = useRef<HTMLDivElement>(null);
 
-  const UPI_ID = "rohit162@fam";
+  const UPI_ID = "rohit1234@fam";
 
   useEffect(() => {
     // Get URL parameters

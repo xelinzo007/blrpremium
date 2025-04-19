@@ -20,7 +20,7 @@ export default function HeroSection() {
           <FaTelegram className="h-5 w-5 text-[#5f6df8] mr-2" />
           <span className="text-[#5f6df8] font-medium">Telegram Premium Channels</span>
         </div>
-        <h1 className="text-[#5f6df8] text-4xl md:text-6xl font-bold mb-4">TG Premium</h1>
+        <h1 className="text-[#5f6df8] text-4xl md:text-6xl font-bold mb-4">Premium Flix</h1>
         <div className="mb-8">
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 dark:text-white text-gray-900">
             Exclusive Content at Your Fingertips
@@ -51,7 +51,7 @@ export default function HeroSection() {
         </div>
         
         <div className="mt-10 text-[#9ca3af] dark:text-[#9ca3af] text-gray-500 text-sm">
-          No credit card required to start your free trial. Cancel anytime.
+          To get Premium Membership Contact:- @ProYato
         </div>
       </div>
     </section>

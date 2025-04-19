@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { FaTelegram, FaQrcode, FaPaperPlane } from "react-icons/fa";
+import { FaTelegram, FaQrcode, FaPaperPlane, FaPaypal, FaBitcoin, FaCreditCard } from "react-icons/fa";
+import { SiStripe } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
 import { useEffect, useState, useRef } from "react";
@@ -17,6 +18,8 @@ export default function ContactPage() {
   const qrRef = useRef<HTMLDivElement>(null);
 
   const UPI_ID = "rohit1234@fam";
+  const PAYPAL_EMAIL = "premium@yourdomain.com";
+  const BITCOIN_ADDRESS = "3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5";
 
   useEffect(() => {
     // Get URL parameters
@@ -32,8 +35,9 @@ export default function ContactPage() {
     if (currencyParam) setCurrency(currencyParam);
   }, []);
 
-  // Only generate QR if currency is INR and price is present
-  const showQRCode = currency === "₹" && price !== "";
+  // Payment methods visibility
+  const showUPI = currency === "₹" && price !== "";
+  const showUSD = (currency === "$" || currency === "€" || currency === "£") && price !== "";
 
   // Generate UPI payment link
   const getUpiLink = () => {
@@ -43,6 +47,15 @@ export default function ContactPage() {
     const paymentDesc = `Channel Premium - ${plan} (${duration})`;
     
     return `upi://pay?pa=${UPI_ID}&pn=TG%20Premium&am=${amount}&cu=INR&tn=${encodeURIComponent(paymentDesc)}`;
+  };
+
+  // Generate PayPal payment link
+  const getPaypalLink = () => {
+    if (!price) return "";
+    const amount = parseFloat(price);
+    const paymentDesc = `Channel Premium - ${plan} (${duration})`;
+    
+    return `https://www.paypal.com/paypalme/${PAYPAL_EMAIL}?amount=${amount}&currencyCode=USD&text=${encodeURIComponent(paymentDesc)}`;
   };
 
   const handleSendScreenshot = () => {
@@ -91,7 +104,7 @@ export default function ContactPage() {
               </TabsList>
               
               <TabsContent value="payment" className="space-y-4">
-                {showQRCode ? (
+                {showUPI ? (
                   <div className="flex flex-col items-center">
                     <div className="relative bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
                       <div ref={qrRef} className="flex flex-col items-center">
@@ -132,21 +145,99 @@ export default function ContactPage() {
                         Send Payment Screenshot
                       </Button>
                     </div>
-                    
-                    <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 text-center">
-                      After payment, please send us a screenshot on Telegram to activate your premium access immediately.
-                    </p>
+                  </div>
+                ) : showUSD ? (
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* PayPal Option */}
+                      <div className="border rounded-lg p-4 flex flex-col items-center">
+                        <FaPaypal className="text-blue-500 text-4xl mb-3" />
+                        <h3 className="font-semibold mb-2">PayPal</h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 text-center">
+                          Pay securely with your PayPal account
+                        </p>
+                        <Button 
+                          className="w-full bg-[#003087] hover:bg-[#00256b] text-white"
+                          onClick={() => window.open(getPaypalLink(), '_blank')}
+                        >
+                          Pay with PayPal
+                        </Button>
+                      </div>
+
+                      {/* Stripe Option */}
+                      <div className="border rounded-lg p-4 flex flex-col items-center">
+                        <SiStripe className="text-purple-600 text-4xl mb-3" />
+                        <h3 className="font-semibold mb-2">Credit/Debit Card</h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 text-center">
+                          Secure payment via Stripe
+                        </p>
+                        <Button 
+                          variant="outline"
+                          className="w-full border-purple-600 text-purple-600 hover:bg-purple-50 dark:hover:bg-purple-900/20"
+                          onClick={() => window.open("https://buy.stripe.com/your-stripe-link", '_blank')}
+                        >
+                          <FaCreditCard className="mr-2 h-4 w-4" />
+                          Pay with Card
+                        </Button>
+                      </div>
+                    </div>
+
+                    {/* Crypto Option */}
+                    <div className="border rounded-lg p-4">
+                      <div className="flex flex-col items-center">
+                        <FaBitcoin className="text-orange-500 text-4xl mb-3" />
+                        <h3 className="font-semibold mb-2">Cryptocurrency</h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 text-center">
+                          Pay with Bitcoin or other cryptocurrencies
+                        </p>
+                        
+                        <div className="w-full max-w-xs bg-white p-4 rounded-lg border border-gray-200 shadow-sm mb-4">
+                          <div className="flex flex-col items-center">
+                            <QRCodeSVG 
+                              value={`bitcoin:${BITCOIN_ADDRESS}?amount=${price}&label=TG%20Premium`}
+                              size={160}
+                              bgColor={"#ffffff"}
+                              fgColor={"#000000"}
+                              level={"L"}
+                              includeMargin={false}
+                            />
+                            <div className="mt-3 text-center">
+                              <p className="text-xs font-mono break-all">{BITCOIN_ADDRESS}</p>
+                              <p className="text-sm mt-1">Amount: {currency}{price}</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <Button 
+                          variant="outline"
+                          className="w-full max-w-xs border-orange-500 text-orange-500 hover:bg-orange-50 dark:hover:bg-orange-900/20"
+                          onClick={() => navigator.clipboard.writeText(BITCOIN_ADDRESS)}
+                        >
+                          Copy Address
+                        </Button>
+                      </div>
+                    </div>
+
+                    <Button
+                      variant="outline" 
+                      className="w-full border-[#5f6df8] dark:text-white text-gray-800 flex items-center justify-center"
+                      onClick={handleSendScreenshot}
+                    >
+                      <FaPaperPlane className="mr-2 h-4 w-4" />
+                      Send Payment Proof
+                    </Button>
                   </div>
                 ) : (
                   <div className="text-center p-8">
                     <p className="text-gray-600 dark:text-gray-400 mb-4">
-                      Online payment is currently only available for Indian Rupee (₹) payments.
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Please contact us on Telegram for USD payments or other payment methods.
+                      Please select a valid plan to see payment options.
                     </p>
                   </div>
                 )}
+                
+                <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 text-center">
+                  After payment, please send us the payment proof on Telegram to activate your premium access immediately.
+                </p>
               </TabsContent>
               
               <TabsContent value="contact">

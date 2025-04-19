@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="mb-4 md:mb-0">
             <div className="flex items-center">
               <AniyomiLogo className="h-8 w-8" />
-              <span className="ml-2 font-semibold dark:text-white text-gray-900">TG Premium</span>
+              <span className="ml-2 font-semibold dark:text-white text-gray-900">Premium Flix</span>
             </div>
-            <p className="text-sm dark:text-gray-400 text-gray-600 mt-2">Premium Telegram channel subscription service</p>
+            <p className="text-sm dark:text-gray-400 text-gray-600 mt-2">Premium Channel Plans subscription service</p>
           </div>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
             <div className="flex space-x-4">

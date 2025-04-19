@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="flex items-center">
         <div className="mr-4 flex items-center">
           <AniyomiLogo className="h-8 w-8" />
-          <span className="ml-2 font-semibold text-white dark:text-white text-gray-900">TG Premium</span>
+          <span className="ml-2 font-semibold text-white dark:text-white text-gray-900">Premium Plans</span>
         </div>
         <div className="relative hidden md:block">
           <div className="flex items-center bg-gray-800 dark:bg-gray-800 bg-gray-100 rounded-md px-3 py-1">
@@ -82,7 +82,7 @@ export default function Navbar() {
         </a>
         <ThemeToggle />
         <a 
-          href="https://t.me/aniyomipremium" 
+          href="https://t.me/codeflix_bots" 
           target="_blank" 
           className="p-1 rounded-full hover:bg-gray-800 dark:hover:bg-gray-800 hover:bg-gray-200" 
           aria-label="Telegram"

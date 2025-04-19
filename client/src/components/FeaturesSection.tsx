@@ -6,44 +6,44 @@ export default function FeaturesSection() {
     {
       icon: <Tv className="text-blue-500" />,
       title: "Ad-Free Experience",
-      description: "Enjoy uninterrupted anime and manga without any advertisements or disruptions.",
+      description: "Enjoy uninterrupted Movies and Adult Content without any advertisements or disruptions.",
       linkText: "Go Premium",
-      link: "#"
+      link: "https://t.me/Premium_Fliix/23"
     },
     {
       icon: <Download className="text-teal-500" />,
       title: "Unlimited Downloads",
       description: "Download as much content as you want for offline viewing, with no daily limits.",
       linkText: "Learn more",
-      link: "#"
+      link: "https://t.me/Premium_Fliix/23"
     },
     {
       icon: <Shield className="text-purple-500" />,
       title: "Priority Support",
       description: "Get faster responses from our support team when you need assistance.",
       linkText: "Get support",
-      link: "#"
+      link: "https://t.me/Premium_Fliix/23"
     },
     {
       icon: <Zap className="text-amber-500" />,
       title: "Enhanced Performance",
-      description: "Experience faster loading times and smoother playback with optimized performance.",
+      description: "Experience faster downloads and smoother playback with high quality files.",
       linkText: "See details",
-      link: "#"
+      link: "https://t.me/Premium_Fliix/23"
     },
     {
       icon: <Award className="text-red-500" />,
       title: "Exclusive Content",
       description: "Access premium content and features that are only available to subscribers.",
       linkText: "View exclusives",
-      link: "#"
+      link: "https://t.me/Premium_Fliix/23"
     },
     {
       icon: <Headphones className="text-green-500" />,
       title: "High Quality Audio",
       description: "Enjoy enhanced audio quality for a more immersive viewing experience.",
       linkText: "Try it now",
-      link: "#"
+      link: "https://t.me/Premium_Fliix/23"
     }
   ];
 

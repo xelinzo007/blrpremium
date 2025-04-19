@@ -56,3 +56,8 @@ git clone https://github.com/yourusername/tg-premium.git
 cd tg-premium
 npm install
 npm run dev
+
+---
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

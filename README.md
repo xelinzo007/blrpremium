@@ -1,61 +1,58 @@
+<h1 align="center">🚀 Premium Flix - Telegram Premium Plans</h1>
 
-# Premium plans website
+<p align="center">
+  A responsive and modern web app to manage <b>Telegram Channel Premium Subscriptions</b><br/>
+  Built with React, Tailwind, and integrated UPI/PayPal payments.
+</p>
 
-# Premium Flix - Telegram Channel Premium Plans 
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-3.0-38bdf8?logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express-Backend-000000?logo=express&logoColor=white" />
+</p>
 
-A responsive and dynamic web application for Telegram channel premium subscriptions with enhanced user interface and interactive design elements.
+<p align="center">
+  <a href="https://vercel.com/new/git/external?repository-url=https://github.com/yourusername/tg-premium&project-name=premium-flix&repository-name=premium-flix">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+  </a>
+</p>
 
-## Features
+---
 
-- Premium subscription plans with various pricing tiers
-- UPI Payment integration with QR code generation
-- Responsive mobile-first design
-- Dynamic theme support (Light/Dark mode)
-- Showcase of premium Telegram channels
-- Contact and support system
+## ✨ Features
 
-## Tech Stack
+- 📦 Multiple premium plans with customizable pricing
+- 💸 UPI Payment (QR-based) for ₹ INR
+- 💲 PayPal & global payment options for USD
+- 📱 Responsive and mobile-friendly design
+- 🌙 Light/Dark mode toggle
+- 🔗 Integrated Telegram contact system
+- 🔐 Fast and secure checkout process
 
-- React.js with TypeScript
-- Tailwind CSS for styling
-- Vite for frontend build tooling
-- Express.js for backend API
+---
 
-## Getting Started
+## 🧑‍💻 Tech Stack
+
+| Frontend       | Backend       | Other Tools     |
+|----------------|---------------|-----------------|
+| React + TS     | Express.js    | Vercel Hosting  |
+| Tailwind CSS   | Node.js 16+   | QR Code Gen     |
+| Vite           | REST API      | Telegram Links  |
+
+---
+
+## 📦 Getting Started
 
 ### Prerequisites
 
-- Node.js 16+ 
-- npm or yarn
+- Node.js 16+
+- npm / yarn
 
 ### Installation
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/yourusername/tg-premium.git
-   cd tg-premium
-   ```
-
-2. Install dependencies
-   ```bash
-   npm install
-   ```
-
-3. Start the development server
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:5000`
-
-## Deployment
-
-This project is configured for easy deployment on Vercel:
-
-1. Connect your GitHub repository to Vercel
-2. Vercel will automatically detect the project type
-3. Deploy with default settings or customize as needed
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+```bash
+git clone https://github.com/yourusername/tg-premium.git
+cd tg-premium
+npm install
+npm run dev

@@ -293,30 +293,30 @@ export default function ContactPage() {
                   </div>
                 </TabsContent>
                 
-                <TabsContent value="contact">
-                  <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 text-center">
-                    <div className="bg-[#0088cc]/10 text-[#0088cc] dark:text-[#5ab5f3] p-3 rounded-full inline-block mb-6">
-                      <FaTelegram className="text-3xl" />
-                    </div>
-                    <h2 className="text-2xl font-bold mb-4">Need Help?</h2>
-                    <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-md mx-auto">
-                      Our support team is available 24/7 to assist with payments or any questions about your subscription.
-                    </p>
-                    
-                    <Button 
-                      size="lg"
-                      className="bg-[#0088cc] hover:bg-[#0077b5] text-white px-8 py-6 text-lg"
-                      onClick={() => window.open("https://t.me/ProYato", '_blank')}
-                    >
-                      <FaTelegram className="mr-2 h-5 w-5" />
-                      Message Us on Telegram
-                    </Button>
-                    
-                    <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-                      Typically replies within 5 minutes
-                    </p>
-                  </div>
-                </TabsContent>
+<TabsContent value="contact">
+  <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 text-center">
+    <div className="bg-[#0088cc]/10 text-[#0088cc] dark:text-[#5ab5f3] p-3 rounded-full inline-block mb-6">
+      <FaTelegram className="text-3xl" />
+    </div>
+    <h2 className="text-2xl font-bold mb-4">Need Help?</h2>
+    <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-md mx-auto">
+      Our support team is available 24/7 to assist with payments or any questions about your subscription.
+    </p>
+    
+    <Button 
+      size="lg"
+      className="bg-[#0088cc] hover:bg-[#0077b5] text-white px-8 py-6 text-lg w-full max-w-md mx-auto"
+      onClick={() => window.open("https://t.me/ProYato", '_blank')}
+    >
+      <FaTelegram className="mr-2 h-5 w-5" />
+      Message Us on Telegram
+    </Button>
+    
+    <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+      Typically replies within 5 minutes
+    </p>
+  </div>
+</TabsContent>
               </Tabs>
             )}
           </div>

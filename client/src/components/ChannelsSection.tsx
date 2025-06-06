@@ -56,52 +56,52 @@ function ChannelCard({ title, description, icon, subscriberCount, category, link
 export default function ChannelsSection() {
   const channels = [
     {
-      title: "Movies Channel",
-      description: "Access to the latest movies, exclusive releases, and high-quality downloads.",
+      title: "Meetups",
+      description: "Join our exclusive Telegram channel for Bangalore meetups, events, and local news.",
       icon: <Film className="h-6 w-6" />,
-      subscriberCount: "15k+",
-      category: "Movies",
-      link: "https://t.me/movieflixspot"
+      subscriberCount: "9k+",
+      category: "Meetups",
+      link: "https://t.me/bangloree"
     },
     {
-      title: "Series Flix",
-      description: "Premium TV shows and series from around the world with subtitles and no ads.",
+      title: "Banglore Chats",
+      description: "Join the vibrant community of Bangalore for discussions, events, and local news.",
       icon: <Video className="h-6 w-6" />,
-      subscriberCount: "40K+",
-      category: "TV Shows",
-      link: "https://t.me/seriesflix_verse"
+      subscriberCount: "2K+",
+      category: "Chats",
+      link: "https://t.me/bengalorechats"
     },
     {
-      title: "Doujinshi Flix",
-      description: "Exclusive Adult Manga content, early releases, and special collections for H-Manga fans.",
+      title: "Banglore friends",
+      description: "Bangalore's exclusive community for friends, events, and local news.",
       icon: <BookOpen className="h-6 w-6" />,
       subscriberCount: "5K+",
-      category: "Doujinshi",
-      link: "https://t.me/hanime_arena"
+      category: "Friends",
+      link: "https://t.me/bengalurufrnds"
     },
     {
-      title: "Music Channel",
-      description: "Premium music tracks, albums, and playlists across all genres and moods.",
+      title: "Mallu Voice Chat",
+      description: "Join the Mallu community for voice chats, discussions, and local news.",
       icon: <Music className="h-6 w-6" />,
       subscriberCount: "1K+",
-      category: "Music",
-      link: "https://t.me/otakuflix_network"
+      category: "voice chat",
+      link: "https://t.me/+Gy9Of3QjoydmNGVl"
     },
     {
-      title: "Adult Flix",
-      description: "Exclusive Adult content, Daily Uploads, and special collections for Corn lovers.",
+      title: "Banglore Dating",
+      description: "Exclusive dating channel for Bangalore singles to connect and meet.",
       icon: <Globe className="h-6 w-6" />,
       subscriberCount: "10K+",
       category: "Adult",
-      link: "https://t.me/hanime_arena"
+      link: "https://t.me/bangloredatings"
     },
     {
-      title: "Otaku Community",
-      description: "Exclusive group for creative professionals with resources and networking.",
+      title: "Banglore Jobs",
+      description: "Find the latest job opportunities in Bangalore. Connect with recruiters and job seekers.",
       icon: <MessageCircle className="h-6 w-6" />,
-      subscriberCount: "100K+",
-      category: "Community",
-      link: "https://t.me/otakuflix_network"
+      subscriberCount: "10K+",
+      category: "Jobs",
+      link: "https://t.me/jobsbanglore"
     },
   ];
 

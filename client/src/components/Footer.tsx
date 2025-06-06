@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-6 border-t dark:border-gray-800 border-gray-200 text-center text-sm dark:text-gray-400 text-gray-600">
-          <p>© {new Date().getFullYear()} Premium Flix. Not affiliated with or endorsed by Telegram Inc.</p>
+          <p>© {new Date().getFullYear()} BLR Premium Flix. Not affiliated with or endorsed by Telegram Inc.</p>
         </div>
       </div>
     </footer>

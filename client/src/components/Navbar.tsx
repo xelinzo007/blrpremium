@@ -82,7 +82,7 @@ export default function Navbar() {
         </a>
         <ThemeToggle />
         <a 
-          href="https://t.me/codeflix_bots" 
+          href="https://t.me/Xelsix" 
           target="_blank" 
           className="p-1 rounded-full hover:bg-gray-800 dark:hover:bg-gray-800 hover:bg-gray-200" 
           aria-label="Telegram"
